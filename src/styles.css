@@ -1,0 +1,189 @@
+/* News */
+*{
+    font-family: Inter,sans-serif;
+    margin: 0px;
+}
+.Card{
+    z-index:100;
+    box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.8);
+    min-width: 354px;
+    padding-bottom: 25px;
+}
+
+.cardimg{
+    width: 100%;
+    height: 200px;
+}
+
+.carda{
+    text-decoration: none;
+    color: black;
+}
+
+.Nindexdiv{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 30px 170px;
+    margin-top:20px;
+    align-content: center;
+    justify-content: space-around;
+    align-items: stretch;
+    justify-items: center;
+}
+
+.Nindex-nav{
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    z-index: 9999;
+    background-color: #1b1b1b;
+    color: white;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 0px;
+    padding-bottom: 25px;
+}
+
+.card-source-p{
+    display: inline-block;
+    background: rgba(38,0,128,.226);
+    font-size: 11px;
+    padding: 5px 6px;
+    color: rgba(0,11,43,.534);
+    border-radius: 3px;
+}
+
+.card-publish-p{
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    margin-left: 135px;
+}
+
+
+.card-div2{
+    margin: 10px 0px;
+}
+
+.card-div1{
+    margin: 0px 15px;
+}
+
+.card-h1{
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.Nindex-head{
+    flex:15%;
+    margin-left: 20px;
+    padding-top: 25px;
+    font-size: 40px;
+}
+
+.Nindex-form{
+    display: flex;
+    justify-content: space-between;
+    flex: 25%;
+    background: #272727;
+    border-radius: 5px;
+    flex-wrap: nowrap;
+    padding: 15px 0;
+    margin: 0 70px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Nindex-div3{
+    flex: 40%;
+}
+
+.Nindex-blog{
+    text-align: center;
+    margin-top: 40px;
+    margin-left:100px
+}
+
+.Nindex-create{
+    margin-top: 40px;
+    margin-left:100px;
+}
+
+.Nindex-logout{
+    display: inline-block;
+    margin-top: 40px;
+    margin-left:100px;
+}
+
+.Nindex-input{
+    padding: 5px 30px;
+    padding-left: 30px;
+    background: none;
+    font-size: 15px;
+    width: 80%;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.Nindex-btn{
+    width: 18%;
+    font-size: 17px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: 1s ease-in-out;
+    background: #1b1b1b;
+    color: white;
+    border: 1px #1b1b1b;
+    border-radius: 10px;
+}
+
+.Card:hover{
+    background-color: rgb(227, 227, 227);
+}
+
+.Nindex-headline{
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+    font-size:50px;
+}
+
+@media screen and (max-width:1200px){
+    .Nindexdiv {
+        grid-template-columns: repeat(2,1fr);
+        padding: 30px 0px;
+        width: 354px;
+        margin: auto;
+    }
+    .Nindex-nav{
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    }
+    .Nindex-form{
+        min-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Nindex-blog{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:775px){
+    .Nindexdiv {
+        grid-template-columns: repeat(1,1fr);
+        padding: 30px 0px;
+        width: 354px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width:812px){
+    .Nindex-form{
+        max-width: 200px;
+    }
+}
