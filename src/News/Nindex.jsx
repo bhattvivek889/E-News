@@ -7,7 +7,7 @@ function Nindex(){
     const[state,setState]=useState("Trending");
     useEffect(()=>{
         async function getData(){
-            const res=await axios.get(`https://newsapi.org/v2/everything?q=${state}&pageSize=54&apiKey=ba2954c5cf594456b714ba894dce1275`)
+            const res=await axios.get(`http://newsapi.org/v2/everything?q=${state}&pageSize=54&apiKey=ba2954c5cf594456b714ba894dce1275`)
             setData(res.data.articles);
         }
         getData();
