@@ -1,5 +1,6 @@
 {
   "name": "frontend",
+  "proxy":"https://newsapi.org/v2/everything?q=keyword&apiKey=ba2954c5cf594456b714ba894dce1275",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
