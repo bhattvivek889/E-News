@@ -3,7 +3,7 @@ function Card(props){
     return (
         <div className="Card" key={props.id}>
             <a className="carda" href={props.url} target="_blank">
-                <img className="cardimg" src={props.image}></img>
+                <img className="cardimg" src={props.image} alt=""></img>
                 <div className="card-div1">
                     <div className="card-div2">
                         <p className="card-source-p">{props.source}</p>
